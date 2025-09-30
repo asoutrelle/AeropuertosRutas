@@ -1,0 +1,7 @@
+Jorge Newbery,CABA,ARG
+Ministro Pistarini,Ezeiza,ARG
+Pucon, Pucon,CHI
+John F. Kennedy,New York,USA
+El Prat,Barcelona,ESP
+Armando Tola,Calafate,ARG
+Logan,Boston,USA

@@ -1,0 +1,12 @@
+John F. Kennedy,Ministro Pistarini,10,0,{LATAM-78,}
+John F. Kennedy,Jorge Newbery,2,0,{United Airlines-78,}
+Ministro Pistarini,Armando Tola,7,1,{United Airlines-78,}
+Armando Tola,Jorge Newbery,1,0,{LATAM-78,}
+Ministro Pistarini,Jorge Newbery,8,0,{Delta-78,}
+Armando Tola,Logan,10,0,{United Airlines-78,}
+John F. Kennedy,El Prat,4,0,{LATAM-78,}
+Logan,Jorge Newbery,1,0,{Delta-78,}
+Logan,Pucon,9,0,{Delta-78,}
+Pucon,Jorge Newbery,12,0,{United Airlines-78,}
+Pucon,El Prat,2,0,{United Airlines-78,}
+El Prat,Jorge Newbery,3,0,{Delta-78,}

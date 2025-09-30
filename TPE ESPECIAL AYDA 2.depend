@@ -1,0 +1,259 @@
+# depslib dependency file v1.0
+1695847683 source:c:\users\axelt\onedrive\documents\facultad 2023\ayda 2\lavoratorio\pruebas y testeos\dfdf\grafocpp.cpp
+	"grafo.h"
+	"sest.h"
+	<list>
+	<queue>
+	<iostream>
+	<map>
+	<vector>
+	<limits>
+	<algorithm>
+
+1695847683 c:\users\axelt\onedrive\documents\facultad 2023\ayda 2\lavoratorio\pruebas y testeos\dfdf\grafo.h
+	<list>
+	<set>
+	"sest.h"
+	<map>
+	<queue>
+	<vector>
+
+1695847683 c:\users\axelt\onedrive\documents\facultad 2023\ayda 2\lavoratorio\pruebas y testeos\dfdf\sest.h
+	<iostream>
+	<cassert>
+
+1695847683 source:c:\users\axelt\onedrive\documents\facultad 2023\ayda 2\lavoratorio\pruebas y testeos\dfdf\main.cpp
+	"grafo.h"
+	"Sest.h"
+	"iostream"
+
+1695847683 source:c:\users\axelt\onedrive\documents\facultad 2023\ayda 2\lavoratorio\pruebas y testeos\dfdf\sets.cpp
+	"sest.h"
+	<iostream>
+	<cassert>
+
+1695923660 source:c:\users\axelt\onedrive\documents\facultad 2023\ayda 2\tp especial\dfdf\sets.cpp
+	"sest.h"
+	<iostream>
+	<cassert>
+
+1695847683 c:\users\axelt\onedrive\documents\facultad 2023\ayda 2\tp especial\dfdf\sest.h
+	<iostream>
+	<cassert>
+
+1696979050 source:c:\users\axelt\onedrive\documents\facultad 2023\ayda 2\tp especial\dfdf\grafocpp.cpp
+
+1697518797 c:\users\axelt\onedrive\documents\facultad 2023\ayda 2\tp especial\dfdf\grafo.h
+	<list>
+	<set>
+	<map>
+	<queue>
+	<vector>
+	"iostream"
+	<cassert>
+
+1697581085 source:c:\users\axelt\onedrive\documents\facultad 2023\ayda 2\tp especial\dfdf\main.cpp
+	"Grafo.h"
+	"iostream"
+	<cassert>
+	"Vertice.h"
+	"ArcoDatos.h"
+	"Reservas.h"
+	<fstream>
+	<string>
+	<conio.h>
+	<vector>
+	<set>
+	<algorithm>
+
+1696978616 c:\users\axelt\onedrive\documents\facultad 2023\ayda 2\tp especial\dfdf\vertice.h
+	<string>
+	<iostream>
+
+1697573187 c:\users\axelt\onedrive\documents\facultad 2023\ayda 2\tp especial\dfdf\arcodatos.h
+	"Vertice.h"
+	<map>
+	<list>
+	<cassert>
+
+1696978660 c:\users\axelt\onedrive\documents\facultad 2023\ayda 2\tp especial\dfdf\aerolineas.h
+	<string>
+	<iostream>
+	<cassert>
+
+1697508312 c:\users\axelt\onedrive\documents\facultad 2023\ayda 2\tp especial\dfdf\reservas.h
+	<string>
+	<iostream>
+	<cassert>
+	<map>
+
+1698539954 source:c:\users\axelt\onedrive\documents\facultad 2023\ayda 2\tp especial\tpe especial ayda 2\main.cpp
+	"Grafo.h"
+	"iostream"
+	<cassert>
+	"Vertice.h"
+	"ArcoDatos.h"
+	"Reservas.h"
+	<fstream>
+	<string>
+	<conio.h>
+	<vector>
+	<set>
+	<algorithm>
+	<limits>
+
+1698518250 c:\users\axelt\onedrive\documents\facultad 2023\ayda 2\tp especial\tpe especial ayda 2\grafo.h
+	<list>
+	<set>
+	<map>
+	<queue>
+	<vector>
+	"iostream"
+	<cassert>
+
+1696978616 c:\users\axelt\onedrive\documents\facultad 2023\ayda 2\tp especial\tpe especial ayda 2\vertice.h
+	<string>
+	<iostream>
+
+1697573187 c:\users\axelt\onedrive\documents\facultad 2023\ayda 2\tp especial\tpe especial ayda 2\arcodatos.h
+	"Vertice.h"
+	<map>
+	<list>
+	<cassert>
+
+1697508312 c:\users\axelt\onedrive\documents\facultad 2023\ayda 2\tp especial\tpe especial ayda 2\reservas.h
+	<string>
+	<iostream>
+	<cassert>
+	<map>
+
+1700950534 source:c:\users\tomas\desktop\tp especial\tp especial\tpe especial ayda 2\main.cpp
+	"Grafo.h"
+	"iostream"
+	<cassert>
+	"Vertice.h"
+	"ArcoDatos.h"
+	"Reservas.h"
+	<fstream>
+	<string>
+	<conio.h>
+	<vector>
+	<set>
+	<algorithm>
+	<limits>
+	<utility>
+	<cstdlib>
+
+1700950923 c:\users\tomas\desktop\tp especial\tp especial\tpe especial ayda 2\grafo.h
+	<list>
+	<set>
+	<map>
+	<queue>
+	<vector>
+	"iostream"
+	<cassert>
+
+1700929095 c:\users\tomas\desktop\tp especial\tp especial\tpe especial ayda 2\vertice.h
+	<string>
+	<iostream>
+
+1700950923 c:\users\tomas\desktop\tp especial\tp especial\tpe especial ayda 2\arcodatos.h
+	"Vertice.h"
+	<map>
+	<list>
+	<cassert>
+
+1700949266 c:\users\tomas\desktop\tp especial\tp especial\tpe especial ayda 2\reservas.h
+	<string>
+	<iostream>
+	<cassert>
+	<map>
+	<utility>
+	"Vertice.h"
+
+1700950534 source:c:\users\axelt\onedrive\escritorio\trabajo xd\main.cpp
+	"Grafo.h"
+	"iostream"
+	<cassert>
+	"Vertice.h"
+	"ArcoDatos.h"
+	"Reservas.h"
+	<fstream>
+	<string>
+	<conio.h>
+	<vector>
+	<set>
+	<algorithm>
+	<limits>
+	<utility>
+	<cstdlib>
+
+1700950923 c:\users\axelt\onedrive\escritorio\trabajo xd\grafo.h
+	<list>
+	<set>
+	<map>
+	<queue>
+	<vector>
+	"iostream"
+	<cassert>
+
+1700929095 c:\users\axelt\onedrive\escritorio\trabajo xd\vertice.h
+	<string>
+	<iostream>
+
+1700950923 c:\users\axelt\onedrive\escritorio\trabajo xd\arcodatos.h
+	"Vertice.h"
+	<map>
+	<list>
+	<cassert>
+
+1700949266 c:\users\axelt\onedrive\escritorio\trabajo xd\reservas.h
+	<string>
+	<iostream>
+	<cassert>
+	<map>
+	<utility>
+	"Vertice.h"
+
+1700953345 source:c:\users\axelt\onedrive\escritorio\grupo21-soutrelle_antunez\main.cpp
+	"Grafo.h"
+	"iostream"
+	<cassert>
+	"Vertice.h"
+	"ArcoDatos.h"
+	"Reservas.h"
+	<fstream>
+	<string>
+	<conio.h>
+	<vector>
+	<set>
+	<algorithm>
+	<limits>
+
+1700950923 c:\users\axelt\onedrive\escritorio\grupo21-soutrelle_antunez\grafo.h
+	<list>
+	<set>
+	<map>
+	<queue>
+	<vector>
+	"iostream"
+	<cassert>
+
+1700929095 c:\users\axelt\onedrive\escritorio\grupo21-soutrelle_antunez\vertice.h
+	<string>
+	<iostream>
+
+1700950923 c:\users\axelt\onedrive\escritorio\grupo21-soutrelle_antunez\arcodatos.h
+	"Vertice.h"
+	<map>
+	<list>
+	<cassert>
+
+1700949266 c:\users\axelt\onedrive\escritorio\grupo21-soutrelle_antunez\reservas.h
+	<string>
+	<iostream>
+	<cassert>
+	<map>
+	<utility>
+	"Vertice.h"
+

@@ -1,0 +1,6 @@
+#ifndef GRAFO_CPP_INCLUDED
+#define GRAFO_CPP_INCLUDED
+
+
+
+#endif // GRAFO_CPP_INCLUDED
