@@ -1,13 +1,13 @@
-# TPE Análisis y Diseño de Algoritmos II
+## Tabla de Contenidos
+- [Introducción al Problema](#introducción-al-problema)
+- [Implementación de los Servicios 1 y 2](#implementación-de-los-servicios-1-y-2)
+- [Resolución del Servicio 3](#resolución-del-servicio-3)
+- [Funcionamiento de la Aplicación](#funcionamiento-de-la-aplicación)
+- [Conclusiones](#conclusiones)
 
-## Grupo 21
 
-* Integrantes:
+## Introducción al Problema
 
-- Soutrelle, Axel: [**asoutrelleperez@alumnos.exa.unicen.edu.ar**](mailto:asoutrelleperez@alumnos.exa.unicen.edu.ar)  
-- Antúnez, Tomás: [**tomasantunez027@gmail.com**](mailto:tomasantunez027@gmail.com)
-
-**Introducción al Problema**
 
 El problema que abordamos en este trabajo se centra en la administración de aeropuertos y rutas aéreas. En el contexto actual de viajes aéreos, los viajeros y los organismos de seguridad necesitan información precisa y actualizada sobre los vuelos disponibles, las rutas aéreas y las reservas.
 
@@ -19,14 +19,14 @@ Además, para los organismos de seguridad, el sistema debe ser capaz de encontra
 
 El problema aborda un sistema de gestión aeroportuaria que incluye la representación de aeropuertos, rutas entre aeropuertos, reservas de vuelos y servicios relacionados. El modelado del problema incluye múltiples tipos de datos y sus relaciones entre sí.
 
-***(1)Tipos de datos identificados:***
+### Tipos de datos identificados: 
 
 **Aeropuerto (Vértice):** Representa un aeropuerto con sus detalles como nombre, ciudad y país.  
 **Ruta Aérea (ArcoDatos):** Describe las rutas entre los aeropuertos, incluyendo información sobre aerolíneas, asientos, distancias, y si son vuelos nacionales o internacionales (cabotaje).  
 **Reservas (Reservas):** Guarda la cantidad de asientos reservados para vuelos específicos entre aeropuertos.  
 **Grafo (Grafo):** Utilizado para representar la red de aeropuertos y las conexiones/rutas entre ellos.
 
-***(2)Estructuras de datos utilizadas:***
+### Estructuras de datos utilizadas: 
 
 **Vértice (Aeropuerto):** Se implementa como una estructura con datos de nombre, ciudad y país. Utiliza un mapa para almacenar la relación entre el nombre del aeropuerto y un número asociado.
 
@@ -36,7 +36,7 @@ El problema aborda un sistema de gestión aeroportuaria que incluye la represent
 
 **Grafo:** Implementado como una estructura de grafo con listas de adyacencia, que contiene vértices y arcos. Las listas de adyacencia son almacenadas utilizando un mapa donde los vértices son los índices y la lista de adyacencia está representada por una lista.
 
-***(3)Ventajas y desventajas de las estructuras:***
+### Ventajas y desventajas de las estructuras:
 
 **Vértice (Aeropuerto):**  
 **Ventajas:** Acceso rápido a la información del aeropuerto a través del mapa.  
@@ -51,28 +51,28 @@ El problema aborda un sistema de gestión aeroportuaria que incluye la represent
 **Ventajas:** Ideal para representar la relación entre los aeropuertos y las rutas entre ellos.  
 **Desventajas:** Dependiendo de la implementación, la eficiencia de ciertas operaciones (como encontrar caminos) podría verse afectada.
 
-***(4)Complejidad temporal y espacial:***
+### Complejidad temporal y espacial:
 
 Las estructuras de mapas suelen ofrecer una búsqueda eficiente, con complejidad logarítmica    O(log n) para inserciones, búsqueda y eliminaciones.  
 Las listas en un grafo pueden ofrecer una complejidad de O(1) para agregar y eliminar elementos en la lista de adyacencia, pero encontrar caminos (como en un DFS) puede ser de O(MAX(V,E)), donde V es el número de vértices y E el número de aristas.  
 La elección de la estructura de datos depende de los requisitos específicos del sistema y las operaciones que se realicen con más frecuencia. Es importante equilibrar la complejidad temporal y espacial para garantizar un rendimiento eficiente del sistema.  
-**Implementación de los servicios 1 y 2**  
-***Servicio 1:*** **Verificación de vuelo directo**
+## Implementación de los servicios 1 y 2 
+### Servicio 1:  **Verificación de vuelo directo**
 
-**(1)Algoritmo Utilizado:**  
+### Algoritmo Utilizado:
 El algoritmo se basa en verificar si existe un vuelo directo entre dos aeropuertos dados. Para esto, se comprueba si existe un arco que conecta directamente los dos aeropuertos y si la aerolínea específica seleccionada proporciona este servicio.
 
-**(2)Uso de Tipos de Datos:**  
-\*Se utilizan datos de tipo Grafo y ArcoDatos para verificar la existencia del arco directo entre dos aeropuertos.  
-\*La estructura Reservas se usa para comprobar si existen asientos disponibles en la aerolínea seleccionada para el vuelo.
+### Uso de Tipos de Datos:  
+*Se utilizan datos de tipo Grafo y ArcoDatos para verificar la existencia del arco directo entre dos aeropuertos.  
+*La estructura Reservas se usa para comprobar si existen asientos disponibles en la aerolínea seleccionada para el vuelo.
 
-**(3)Implementación y Algoritmo:**  
+### Implementación y Algoritmo:
 \-Se toman los aeropuertos de origen y destino.  
 \-Se comprueba si existe un arco directo entre estos dos aeropuertos.  
 \-Se verifica si la aerolínea seleccionada proporciona este servicio entre los aeropuertos.  
 \-Se consultan las Reservas para verificar si hay asientos disponibles en la aerolínea para el vuelo.
 
-**(4)Complejidad del Algoritmo:**  
+### Complejidad del Algoritmo:
 La verificación de la existencia de un arco directo entre *u* y *v* en un grafo tiene una complejidad de O(Log(n) \+ Log(m) )   
 Donde : n es la cantidad de nodos del grafo y m la cantidad de nodos adyacentes a *u*.
 
@@ -80,7 +80,7 @@ La verificación de la disponibilidad de asientos en la aerolínea tiene una com
 O(Log(o) \+ Log(d) \+ Log(a) )  
 Donde:  “o” la cantidad de aeropuertos de origen, “d” la cantidad de aeropuertos de destino y “a” la cantidad de aerolíneas dentro de los mapas anidados que conforman a reservas. 
 
-**(5)Seguimiento de caso concreto**  
+### Seguimiento de caso concreto:
 Dicho seguimiento se realizará teniendo en cuenta la siguiente red de aeropuertos:  
 **![][image1]**  
 			**Figura 1**  
@@ -96,27 +96,27 @@ Aerolínea: "LATAM"
 Por consola, mostrará lo siguiente:  
 ![][image2]
 
-***Servicio 2: Obtener vuelos de la misma aerolínea***
+### Servicio 2: Obtener vuelos de la misma aerolínea
 
-**(1)Algoritmo Utilizado:**  
+### Algoritmo Utilizado:
 El algoritmo se basa en encontrar todos los posibles caminos entre dos aeropuertos filtrando las aerolíneas para mantener sólo aquellas que pertenecen al mismo camino.
 
-**(2)Uso de Tipos de Datos:**  
+### Uso de Tipos de Datos:
 Se utiliza un algoritmo de Depth-First Search (DFS) en un Grafo para encontrar caminos posibles entre dos aeropuertos.  
 Los tipos de datos Grafo, ArcoDatos, Reservas y Vertice se utilizan para recorrer y verificar los caminos disponibles y las aerolíneas asociadas.
 
-**(3)Implementación y Algoritmo:**  
-\*Se toman los aeropuertos de origen y destino.  
-\*Se realiza una búsqueda de caminos mediante DFS.  
-\*Se verifican las aerolíneas de cada arco y se filtran los caminos que contienen la aerolínea seleccionada.  
-\*Se consultan las Reservas para verificar la disponibilidad de asientos en la aerolínea en cada arco del camino.  
-**(4)Complejidad del Algoritmo:**  
+### Implementación y Algoritmo:
+*Se toman los aeropuertos de origen y destino.  
+*Se realiza una búsqueda de caminos mediante DFS.  
+*Se verifican las aerolíneas de cada arco y se filtran los caminos que contienen la aerolínea seleccionada.  
+*Se consultan las Reservas para verificar la disponibilidad de asientos en la aerolínea en cada arco del camino.  
+### Complejidad del Algoritmo:
 La complejidad para encontrar caminos utilizando DFS en un grafo puede ser de O(MAX(V,E)), donde V es el número de vértices y E es el número de aristas.
 
 La verificación de la disponibilidad de asientos en la aerolínea ya fue descrita anteriormente.  
 O(Log(o) \+ Log(d) \+ Log(a) )
 
-**(5)Seguimiento de caso concreto**  
+### Seguimiento de caso concreto:
 Se realizó el seguimiento sobre el grafo utilizado para el Servicio 1  
 **![][image3]**  
  			**Figura 1**
@@ -132,43 +132,45 @@ Aeropuertos: Origen \= "Ministro Pistarini", Destino \= "Pucon"
 Luego, por pantalla:
 
 ![][image4]  
-**Resolución del servicio 3**  
+## Resolución del servicio 3
 El Servicio 3, centrado en encontrar un circuito de aeropuertos que pase por todos una sola vez, es un caso del conocido Problema del Viajante de Comercio (TSP). Algunos de los posibles algoritmos a utilizar para resolver el problema podrían ser: 
 
 **Fuerza Bruta:**  
-***Características**:* Explora todas las posibles soluciones y calcula el costo total para cada una.  
+### Características**:* Explora todas las posibles soluciones y calcula el costo total para cada una.  
 **Ventajas**:Garantiza encontrar la solución óptima.  
 Dificultades/Limitaciones:Ineficiente para un gran número de nodos, ya que su complejidad es factorial (O(n\!)).
 
 **Heurísticas (Algoritmos Aproximados):**  
-***Características:***  Son aquellos basados en métodos de resolución de problemas fundamentados en la experiencia  
+### Características: 
+Son aquellos basados en métodos de resolución de problemas fundamentados en la experiencia  
 Ventajas:Son rápidos y proporcionan soluciones cercanas a la óptima. Suelen ser eficientes y aceptables para tamaños de entrada grandes.  
 Dificultades/Limitaciones:No garantizan una solución óptima.
 
 **Backtracking:**  
-***Características:***  Realizan búsquedas exhustivas con ciertas restricciones  
+### Características:
+Realizan búsquedas exhustivas con ciertas restricciones  
 **Ventajas**:Garantiza encontrar la solución óptima.  
 Dificultades/Limitaciones:Inviable para entradas grandes.
 
 Dentro de las múltiples alternativas para resolver el Servicio 3, la decisión fue emplear un enfoque de backtracking, ya que, en general, se utilizarán datasets de tamaños chicos.
 
-***(1)Enfoque de la Solución:***
+### Enfoque de la Solución:
 
 La implementación se centra en buscar todas las permutaciones de aeropuertos posibles (en el caso de que se encuentren todos conectados con todos, de otra forma, no existirá un circuito Hamiltoniano para el grafo)  
 Utiliza un algoritmo de búsqueda que explora exhaustivamente las distintas rutas a través de los aeropuertos, calculando el costo total de cada una. Utiliza podas de factibilidad y   
 de optimización para realizar una búsqueda más centrada, evitando generar estados innecesarios que no conllevan a la solución del problema.
 
-**Implementación:**
+## Implementación:
 
-***Estructuras Utilizadas***: Utiliza el grafo (red de aeropuertos), ArcoDatos y  Vértice para generar adecuadamente el recorrido. Luego, usa vectores booleanos y de enteros para verificar que las rutas tomadas cumplen con las restricciones del problema.
+### Estructuras Utilizadas### : Utiliza el grafo (red de aeropuertos), ArcoDatos y  Vértice para generar adecuadamente el recorrido. Luego, usa vectores booleanos y de enteros para verificar que las rutas tomadas cumplen con las restricciones del problema.
 
-***Caso de Ejemplo:***
+### Caso de Ejemplo:### 
 
 Se realizó el caso de ejemplo siguiendo el grafo anteriormente mencionado(ver **Figura 1**)
 
-***Configuración***: Se parte desde un aeropuerto de origen (punto de partida). El objetivo es encontrar la ruta más corta que pase por todos los demás aeropuertos exactamente una vez y regrese al aeropuerto de origen.
+### Configuración### : Se parte desde un aeropuerto de origen (punto de partida). El objetivo es encontrar la ruta más corta que pase por todos los demás aeropuertos exactamente una vez y regrese al aeropuerto de origen.
 
-***Funcionamiento del Algoritmo:***
+### Funcionamiento del Algoritmo:### 
 
 **Paso 1:** Comienza con un aeropuerto de origen A.  
 **Paso 2:** El algoritmo prueba recursivamente todas las posibles permutaciones de los aeropuertos restantes, pasando por cada aeropuerto exactamente una vez.  
@@ -183,7 +185,7 @@ Se realizó el caso de ejemplo siguiendo el grafo anteriormente mencionado(ver *
 
 El algoritmo de backtracking, aunque computacionalmente costoso para un gran número de nodos, garantiza encontrar la solución óptima. Su capacidad para explorar todas las posibles combinaciones de rutas asegura que no se omita la ruta más corta que cumpla con las restricciones del problema. La desventaja principal radica en su complejidad exponencial que lo vuelve inviable para conjuntos de datos grandes.
 
-**Funcionamiento de la Aplicación:**
+## Funcionamiento de la Aplicación:
 
 **Procesamiento de Entradas:**  
 La aplicación carga datos de archivos para aeropuertos, rutas y reservas. Estos datos se almacenan en las estructuras de grafo, vértices y arcos.  
@@ -196,12 +198,12 @@ La aplicación genera salidas basadas en las consultas realizadas. Utiliza una i
 **Servicio 3 \- Circuito de  “origen”.txt**  
 Estos archivos se generarán dentro de la carpeta **datasets** donde se encuentran los archivos **Aeropuertos.txt**, **Reservas.txt**  y  **Rutas.txt**
 
-**Conclusiones del Trabajo:**  
+## Conclusiones:
 La aplicación ofrece servicios valiosos para verificar vuelos y rutas, así como para generar circuitos de aeropuertos, considerando las reservas y la conectividad entre aeropuertos.  
 La desventaja principal radica en la escalabilidad y el rendimiento del algoritmo de TSP para un gran número de aeropuertos.  
 Para conjuntos de datos grandes,  sería beneficioso explorar enfoques alternativos como algoritmos heurísticos y aproximados para el TSP. 
 
-***Nota:** El código del trabajo utiliza el datasets modificado cuyo grafo es el mostrado para realizar los seguimientos que se presentaron en este informe. Si se desea, se puede usar otro datasets distinto para comprobar el correcto funcionamiento de los algoritmos.*
+### Nota:** El código del trabajo utiliza el datasets modificado cuyo grafo es el mostrado para realizar los seguimientos que se presentaron en este informe. Si se desea, se puede usar otro datasets distinto para comprobar el correcto funcionamiento de los algoritmos.*
 
 [image1]: <data:image/png;base64,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>
 
